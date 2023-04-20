@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace string_ex1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter first name");
+            string fname = Console.ReadLine();
+
+            Console.WriteLine("Enter Last Name");
+            String iname = Console.ReadLine();
+
+           // Console.WriteLine("Hello" + fname + " " + iname);
+            string fullname = string.Concat(fname, " ", iname);
+            Console.WriteLine("hello " + fullname.ToUpperInvariant());
+
+            Console.WriteLine("Number of characters in the name is " + fullname.Length);
+            Console.ReadLine();
+        }
+    }
+}
